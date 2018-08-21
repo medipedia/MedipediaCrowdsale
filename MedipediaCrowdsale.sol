@@ -466,7 +466,7 @@ contract WhiteListManager is Ownable {
 
 // File: contracts/Token.sol
 
-contract Token is MintableToken, BurnableToken, DetailedERC20, WhiteListManager{
+contract MedipediaToken is MintableToken, BurnableToken, DetailedERC20, WhiteListManager{
 
     // ------------------------------------------------------------------------
     // Every token amount must be multiplied by constant E18 to reflect decimals
