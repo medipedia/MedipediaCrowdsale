@@ -709,7 +709,7 @@ contract MedipediaToken is MintableToken, BurnableToken, DetailedERC20, WhiteLis
      * @param buyer wallet address of the ICO Buyer
      * @param tokens number of tokens purchased
     */
-    function onICO(address buyer, uint256 tokens) public onlyOwner returns (bool success) {
+    function onICO(address buyer, uint256 tokens) public returns (bool success) {
         require(isICORunning);
         require(isWhitelisted(buyer), "Buyer is not whitelisted");
         require (icoContract != address(0));
